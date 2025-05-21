@@ -1,42 +1,22 @@
 ﻿namespace MethodsDemoCSharp_60;
 
-class Program
+public class Program
 {
-    //Create custom methods here
-    
-    static void Main(string[] args)
+    public static void Madlib()
     {
-        //Console.WriteLine("Hello, World!");
-        //string response = Console.ReadLine();
+        Console.WriteLine("What is your name?");
+        string userName = Console.ReadLine();
+        Console.WriteLine($"Hello, {userName}! What is your favorite color?");
+        string favoriteColor = Console.ReadLine();
+        Console.WriteLine("What is your favorite animal?");
+        string favoriteAnimal = Console.ReadLine();
+        Console.WriteLine("What is your favorite band?");
+        string favoriteBand = Console.ReadLine();
         
-        //calling a method (using a method)
-        GreetUserByName("Seth");
-        GreetUserByName("Michael");
-
-        double result = DoubleAddition(2.5, 2.5);
-        Console.WriteLine(result);
-        
-        Hello();
+        Console.WriteLine($"One day, {userName} was walking through the woods while wearing a {favoriteColor} t-shirt. {userName} saw a {favoriteAnimal} listening to {favoriteBand}.");
     }
-    
-    //Or create custom methods here
-    
-    //method definition (creating a method)
-    //Pascal case (LikeThis
-    //access modifier - return type - method name - parameter list - scope/body
-    public static void GreetUserByName(string name)
+ static void Main(string[] args)
     {
-        Console.WriteLine($"Hello, {name}!");
-    }
-
-    public static double DoubleAddition(double numOne, double numTwo)
-    {
-        //double sum = numOne + numTwo;
-        return numOne + numTwo;
-    }
-
-    public static void Hello()
-    {
-        Console.WriteLine("Hello!");
+        Madlib();
     }
 }
