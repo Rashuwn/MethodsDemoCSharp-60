@@ -15,8 +15,49 @@ public class Program
         
         Console.WriteLine($"One day, {userName} was walking through the woods while wearing a {favoriteColor} t-shirt. {userName} saw a {favoriteAnimal} listening to {favoriteBand}.");
     }
- static void Main(string[] args)
+
+    public static int Add(int numOne, int numTwo)
     {
-        Madlib();
+        return numOne + numTwo;
+    }
+
+    public static int Substract(int numOne, int numTwo)
+    {
+        return numOne - numTwo;
+    }
+
+    public static int Multiply(int numOne, int numTwo)
+    {
+        return numOne * numTwo;
+    }
+
+    public static int Divide(int numOne, int numTwo)
+    {
+        return numOne / numTwo;
+    }
+
+    public static int Sum(params int[] nums)
+    {
+        int sum = 0;
+        
+        foreach(int num in nums)
+            sum += num;
+        
+        return sum;
+    }
+    
+    
+    
+ static void Main(string[] args)
+ 
+    {
+        //Madlib();
+        Console.WriteLine(Add(numOne:4, numTwo:8));
+        int addedNums = Add(numOne: 4, numTwo: 8);
+        Console.WriteLine(addedNums);
+        Console.WriteLine(Substract(4, 4));
+        Console.WriteLine(Multiply(numOne: 4, numTwo: 8));
+        Console.WriteLine(Divide(4, 8));
+        Console.WriteLine(Sum(4, 8, 7));
     }
 }
